@@ -55,12 +55,18 @@
                                 <rect key="frame" x="164" y="216" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBTN:" destination="XKJ-Ga-m4q" eventType="touchUpInside" id="Abr-kb-WXn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="z4J-xj-Jgj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Results" id="c8N-Hu-clD"/>
+                    <connections>
+                        <outlet property="resultLBL" destination="0OB-Wl-ebk" id="yYR-cC-j69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Yr-nL-5gk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,16 +91,25 @@
                                 <rect key="frame" x="164" y="201" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Rock"/>
+                                <connections>
+                                    <action selector="player1RockBTN:" destination="ExG-pG-x7n" eventType="touchUpInside" id="wpm-04-e5z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd9-cl-KWy">
                                 <rect key="frame" x="164" y="268" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Paper"/>
+                                <connections>
+                                    <action selector="player1PaperBTN:" destination="ExG-pG-x7n" eventType="touchUpInside" id="dUz-iU-qgf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IX-gr-4es">
                                 <rect key="frame" x="156" y="332" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scissors"/>
+                                <connections>
+                                    <action selector="player1ScissorsBTN:" destination="ExG-pG-x7n" eventType="touchUpInside" id="JY2-yo-9xB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -125,16 +140,25 @@
                                 <rect key="frame" x="164" y="185" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Rock"/>
+                                <connections>
+                                    <action selector="player2RockBTN:" destination="m7C-dI-Sza" eventType="touchUpInside" id="bKp-ZT-YZL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lb-8x-IZA">
                                 <rect key="frame" x="164" y="244" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Paper"/>
+                                <connections>
+                                    <action selector="player2PaperBTN:" destination="m7C-dI-Sza" eventType="touchUpInside" id="Rde-aj-LS1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX7-Ku-bJX">
                                 <rect key="frame" x="154" y="311" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scissors"/>
+                                <connections>
+                                    <action selector="player2ScissorsBTN:" destination="m7C-dI-Sza" eventType="touchUpInside" id="E5u-1n-9sU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

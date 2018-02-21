@@ -22,6 +22,21 @@ class Player1ViewController: UIViewController {
     }
     
 
+    let myModel = AppDelegate.myModel
+    
+    
+    @IBAction func player1RockBTN(_ sender: UIButton) {
+        myModel.choosePlayer1(pick: .Rock)
+    }
+    
+    @IBAction func player1PaperBTN(_ sender: UIButton) {
+        myModel.choosePlayer1(pick: .Paper)
+    }
+    
+    @IBAction func player1ScissorsBTN(_ sender: UIButton) {
+        myModel.choosePlayer1(pick: .Scissors)
+    }
+    
     /*
     // MARK: - Navigation
 

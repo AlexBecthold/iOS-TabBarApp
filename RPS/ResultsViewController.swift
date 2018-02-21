@@ -21,7 +21,22 @@ class ResultsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(<#T##animated: Bool##Bool#>)
+        if(myModel.haveResult() == true){
+            resultLBL.text = myModel.winner()
+        }
+    }
 
+    let myModel = AppDelegate.myModel
+    
+    
+    @IBOutlet weak var resultLBL: UILabel!
+    @IBAction func resetBTN(_ sender: UIButton) {
+        myModel.reset()
+        resultLBL.text = ""
+    }
+    
     /*
     // MARK: - Navigation
 
